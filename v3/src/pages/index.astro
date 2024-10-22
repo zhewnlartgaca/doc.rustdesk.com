@@ -16,13 +16,12 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} i18n>
   <Note
     title="Note"
     subtitle='<span class="text-2xl text-font-bold">rustdesk.com</span> is our only official domain. Please do not download RustDesk from the other domains.'
   />
 
-  <!-- Hero Widget ******************* -->
   <Hero
     actions={[
       {
@@ -46,20 +45,14 @@ const metadata = {
       <Carousel
         client:load
         list={[
-          { src: 'remote.jpg', className: 'rounded-[15px] border border-gray-700' },
-          { src: 'main.png', className: 'rounded-[15px] border border-gray-700' },
-          { src: 'console.png', className: 'rounded-[15px] border border-gray-700' },
-          { src: 'custom.png', className: 'rounded-[15px] border border-gray-700' },
+          { src: '/remote.jpg', className: 'rounded-[15px] border border-gray-700' },
+          { src: '/main.png', className: 'rounded-[15px] border border-gray-700' },
+          { src: '/console.png', className: 'rounded-[15px] border border-gray-700' },
+          { src: '/custom.png', className: 'rounded-[15px] border border-gray-700' },
         ]}
       />
     </Fragment>
   </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <!-- <Note /> -->
-
-  <!-- Content Widget **************** -->
 
   <Content
     isReversed
@@ -98,8 +91,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
 
   <Content
     isAfterContent
@@ -141,8 +132,6 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
   <Steps
     isReversed
     title="Simple self-hosting installation"
@@ -179,7 +168,6 @@ const metadata = {
     </Fragment>
   </Steps>
 
-  <!-- Stats Widget ****************** -->
   <Stats
     tagline="Scenarios"
     title="Who are using self-hosting?"
@@ -191,8 +179,6 @@ const metadata = {
       { title: 'Industrial and others', amount: '9%' },
     ]}
   />
-
-  <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts title="Find out more content in our Blog" />
 
